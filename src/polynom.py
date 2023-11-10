@@ -33,7 +33,7 @@ class Polynomial:
             elif coeff != 0:
                 res += f"{coeff:+g}{x_expr(degree-i)}" 
                 res += " "
-        return res.lstrip('+')
+        return res.lstrip('+').strip()
         
     def __call__(self, x):
         res = 0
