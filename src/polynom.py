@@ -10,6 +10,7 @@ class Polynomial:
         self.degre = len(coefs)-1
 
     def __repr__(self) -> str:
+        
         def x_expr(degree):
             if degree == 0:
                 res = ""
@@ -41,6 +42,5 @@ class Polynomial:
             res += coeff * x** index
         return res
     
-
     def __eq__(self, other: object) -> bool:
-        return other.degre == self.degre and other.coefs ==self.coefs
+        return other.degre == self.degre and other.coefs == self.coefs
